@@ -13,7 +13,9 @@
 	}
 	else
 	{
-		
+		echo '<script>alert("Invalid credentials, please try again");
+            window.location.href = "Registration.html";
+            </script>';
 	}
 ?>
 

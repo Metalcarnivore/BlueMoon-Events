@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipient registration</title>
+        <link rel="stylesheet" href="css/reg.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" type='text/css'>
+        <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <!--Header with navbar-->
+        <section class="header">
+            <div class="logo">
+                <a href="index.html"><strong>twilight events.</strong></a>
+            </div>
+                <ul class="navbar">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+        </section>
+        <div class="background"></div>
+        <section class="container">
+            <h1>Add Venue</h1>
+            <form action="submit.php" class="form" method="post" enctype="multipart/form-data">
+                <div class="input-box">
+                    <label for="venue name">Venue Name</label>
+                    <input type="text" placeholder="Enter venue name" id="venue_name" name="venue_name" required/>
+                </div>
+                <div class="column">
+                    <div class="select-box">
+                        <select name="venue_location" id="venue_location" required>
+                            <option>District</option>
+                            <option value="alappuzha">Alappuzha</option>
+                            <option value="ernakulam">Ernakulam</option>
+                            <option value="kottayam">Kottayam</option>
+                            <option value="thrissur">Thrissur</option>
+                            <option value="Palakkad">Palakkad</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="venue rate">Venue Rate</label>
+                    <input type="text" placeholder="Enter venue rate" id="venue_rate" name="venue_rate" required/>
+                </div>
+                <div class="input-box">
+                    <label for="venue capacity">Venue capacity</label>
+                    <input type="text" placeholder="Enter venue capacity" id="venue_capacity" name="venue_capacity" required/>
+                </div>
+                <div class="input-box">
+                    <label for="venue classification">Venue classification</label>
+                    <input type="text" placeholder="Enter venue classification" id="venue_classification" name="venue_classification" required/>
+                </div>
+                <div class="input-box">
+                    <label for="venue_dis">venue_dis</label>
+                    <input type="text" id="venue_dis" placeholder="venue_dis" name="venue_dis" required/>
+                </div>
+                    <label for="venue_image">Venue Image:</label>
+                    <input type="file" name="venue_image" accept="image/*" required><br>
+               <input type="submit" value="INSERT"/>     
+            </form>         
+        </section>
+    </body>
+</html>

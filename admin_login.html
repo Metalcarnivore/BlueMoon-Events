@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipient registration</title>
+        <link rel="stylesheet" href="css/reg.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" type='text/css'>
+        <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap' rel='stylesheet' type='text/css'>
+        <script>
+            function validateForm() {
+        // Get form inputs    
+        var password = document.getElementById("password")
+         // Validate email input
+        //validate password input
+        if(password  .value==="") {
+          alert("please enter your password");
+          return false;
+        }
+      
+        // If all validations pass, submit the form 
+        return true;
+            }
+      </Script>
+    </head>
+    <body>
+        <!--Header with navbar-->
+        <section class="header">
+            <div class="logo">
+                <a href="index.html"><strong>twilight events.</strong></a>
+            </div>
+                <ul class="navbar">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="http://localhost/Twilight%20Events/index.html#aboutUs"><li>About</li></a>
+                    <a href="http://localhost/Twilight%20Events/index.html#contactUs"><li>Contact</li></a>
+                </ul>
+        </section>
+        <div class="background"></div>
+        <section class="container">
+            <h1>Admin Login</h1>
+            <form action="admin_login.php" class="form" method="post">
+                <div class="input-box">
+                    <label>Username</label>
+                    <input type="text" id="username" name="username">
+                </div>    
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" >
+                </div>
+                <input type="submit" value="Login" class="btn-login">   
+            </form>       
+        </section>
+    </body>
+</html>
